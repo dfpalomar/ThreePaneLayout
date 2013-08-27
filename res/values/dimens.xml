@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="footbar_bar_height">40dp</dimen>
+
+</resources>

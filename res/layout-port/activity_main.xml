@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.panels.controls.ThreePaneLayout
+        xmlns:custom="http://schemas.android.com/apk/res/com.panels"
+        android:id="@+id/multiPaneControl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        custom:initialState="left_visible" >
+
+        <FrameLayout
+            android:id="@+id/categoriesList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/tasksList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/taskDetail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </com.panels.controls.ThreePaneLayout>
+
+</LinearLayout>
